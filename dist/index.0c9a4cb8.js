@@ -519,31 +519,114 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"Jmn9h":[function(require,module,exports) {
-const PageDetail = (argument1)=>{
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "PageDetail", ()=>PageDetail
+);
+const apiKey = `?key=${"7a3c3d6e418444e7b23642de8d69741d"}`;
+const PageDetail = (argument1 = "")=>{
+    console.log("Page Detail", argument1);
     const preparePage = ()=>{
         const cleanedArgument = argument1.replace(/\s+/g, "-");
-        const displayGame = (gameData)=>{
-            const { name , released , description  } = gameData;
-            const articleDOM = document.querySelector(".page-detail .article");
-            articleDOM.querySelector("h1.title").innerHTML = name;
-            articleDOM.querySelector("p.release-date span").innerHTML = released;
-            articleDOM.querySelector("p.description").innerHTML = description;
-        };
         const fetchGame = (url, argument)=>{
-            fetch(`${url}/${argument}?key=${API_KEY}`).then((response)=>response.json()
-            ).then((responseData)=>{
-                displayGame(responseData);
+            let finalURL = url + argument + apiKey;
+            console.log(finalURL);
+            fetch(`${finalURL}`).then((response)=>response.json()
+            ).then((response1)=>{
+                console.log(response1);
+                let { name , released , description , background_image , developers , rating , website , parent_platforms , tags , genres , publishers , ratings_count ,  } = response1;
+                let articleDOM = document.querySelector(".page-detail .article");
+                articleDOM.querySelector("h1.title").innerHTML = name;
+                articleDOM.querySelector("p.release-date").innerHTML = `Release Date: ${released}`;
+                articleDOM.querySelector(".descriptions").innerHTML = description;
+                articleDOM.querySelector("img").src = background_image;
+                articleDOM.querySelector("p.devs").innerHTML = `Studio: ${developers.map((x)=>x.name
+                )}`;
+                articleDOM.querySelector("a.web").setAttribute("href", `${website}`);
+                articleDOM.querySelector("p.rating").innerHTML = `Rating: ${rating}/${ratings_count} vote`;
+                articleDOM.querySelector("p.platform").innerHTML = `Plateform: ${parent_platforms.map((x)=>x.platform.name
+                )}`;
+                articleDOM.querySelector("p.tags").innerHTML = `Tags: ${tags.map((x)=>x.slug
+                )}`;
+                articleDOM.querySelector("p.genre").innerHTML = `Genre: ${genres.map((x)=>x.name
+                )}`;
+                articleDOM.querySelector("p.editor").innerHTML = `Publishers: ${publishers.map((x)=>x.name
+                )}`;
+                articleDOM.querySelector(".btn").setAttribute("href", `${website}`);
+                let screenShotUrl = url + response1.slug + "/screenshots" + apiKey;
+                console.log(screenShotUrl);
+                fetch(screenShotUrl).then((response)=>response.json()
+                ).then((response)=>{
+                    let { results  } = response;
+                    articleDOM.querySelector(".grid-2").innerHTML = `
+                <div class="item" style="background-image: url('${results[0].image}');"></div>
+                <div class="item" style="background-image: url('${results[1].image}');"></div>
+                <div class="item" style="background-image: url('${results[2].image}');"></div>
+                <div class="item" style="background-image: url('${results[3].image}');"></div>
+              
+              `;
+                });
+                let trailerUrl = url + response1.id + "/movies" + apiKey;
+                fetch(trailerUrl).then((response)=>response.json()
+                ).then((response)=>{
+                    articleDOM.querySelector(".video").innerHTML = `
+                <source src="${response.results[0].data.max}" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+              `;
+                });
             });
         };
-        fetchGame("https://api.rawg.io/api/games", cleanedArgument);
+        fetchGame(`https://api.rawg.io/api/games/`, cleanedArgument);
     };
     const render = ()=>{
         pageContent.innerHTML = `
       <section class="page-detail">
         <div class="article">
           <h1 class="title"></h1>
-          <p class="release-date">Release date : <span></span></p>
-          <p class="description"></p>
+          <div class="image">
+            <img src="" alt="game image">
+          </div>
+          <div class="rate">
+              <p class="rating"> </p>
+          </div>
+          <div class="release">
+            <p class="release-date"></p>
+          </div>
+          <div class="descriptions">
+            <p></p>
+          </div>
+          <div class="section">
+            <div class="developers">
+              <p class="devs"> </p>
+            </div>
+            <div class="all-tags">
+              <p class="tags"> </p>
+            </div>
+            <div class="game-genre">
+              <p class="genre"> </p>
+            </div>
+            <div class="edit">
+              <p class="editor"> </p>
+            </div>
+            <div class="website">
+              <a class="web" href="">website</a>
+            </div>
+            <div class="console">
+              <p class="platform"> </p>
+            </div>
+          </div>
+          <div class="Buy">
+            <a class="btn" href="">Buy</a>
+          </div>
+          <div class="section">
+            <h1 class="title">screenshots</h1>
+            <div class="grid-2"></div>
+          </div>
+          <div class="section">
+            <h1 class="title">trailer</h1>
+            <video controls class="video"></video>
+          </div>
+          
         </div>
       </section>
     `;
@@ -552,6 +635,6 @@ const PageDetail = (argument1)=>{
     render();
 };
 
-},{}]},["lfiU1","Jmn9h"], "Jmn9h", "parcelRequire57b7")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["lfiU1","Jmn9h"], "Jmn9h", "parcelRequire57b7")
 
 //# sourceMappingURL=index.0c9a4cb8.js.map

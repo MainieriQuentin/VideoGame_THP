@@ -1,18 +1,34 @@
-import "./style/index.scss";
-import { routes } from "./routes";
+import "./style/variables.scss";
+import "./style/body.scss";
+import "./style/header.scss";
+import "./style/main.scss";
+import "./style/section.scss";
 
-const apiKey = process.env.API_KEY;
+import { routes } from "./routes";
+console.log(process.env.API_KEY);
 
 let pageArgument;
 
 const setRoute = () => {
   const path = window.location.hash.substring(1).split("/");
   pageArgument = path[1] || "";
-
   const pageContent = document.getElementById("pageContent");
+  console.log(routes);
   routes[path[0]](pageArgument);
   return true;
 };
+
+const searchGame = () => {
+  const input = document.getElementById("searchinput");
+  input.addEventListener("keydown", function (event) {
+    if (event.keyCode == 13) {
+      let gameToSearch = input.value;
+      gameToSearch = gameToSearch.replace(/\s+/g, "-");
+      window.location.href = `#pagelist/${gameToSearch}`;
+    }
+  });
+};
+searchGame();
 
 window.addEventListener("hashchange", () => setRoute());
 window.addEventListener("DOMContentLoaded", () => setRoute());

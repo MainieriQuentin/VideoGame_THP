@@ -519,27 +519,42 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"a52r4":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "PageList", ()=>PageList
+);
+const apiKey = "7a3c3d6e418444e7b23642de8d69741d";
 const PageList = (argument1 = "")=>{
     const preparePage = ()=>{
         const cleanedArgument = argument1.replace(/\s+/g, "-");
-        const displayResults = (articles)=>{
-            const resultsContent = results.map((article)=>`<article class="cardGame">
-          <h1>${article.name}</h1>
-          <h2>${article.released}</h2>
-          <a href="#pagedetail/${article.id}">${article.id}</a>
-        </article>`
-            );
-            const resultsContainer = document.querySelector(".page-list .articles");
-            resultsContainer.innerHTML = resultsContent.join("\n");
-        };
+        let articles = "";
         const fetchList = (url, argument)=>{
-            const finalURL = argument ? `${url}&search=${argument}` : url;
-            fetch(finalURL).then((response)=>response.json()
-            ).then((responseData)=>{
-                displayResults(responseData.results);
+            let finalURL = url;
+            if (argument) finalURL = url + "&search=" + argument;
+            fetch(`${finalURL}`).then((response)=>response.json()
+            ).then((response)=>{
+                console.log(response);
+                response.results.forEach((article)=>{
+                    console.log(article);
+                    articles += `
+              <div class="cardGame">
+                <img src="${article.background_image}" alt="game image">
+                <h1>${article.name}</h1>
+                
+                <div class="overview">
+                  <h3>${article.name}</h3>
+                  <h1>${article.rating_top}</h1>
+                  <p>Rating: ${article.metacritic}</p>
+                    <a href = "#pagedetail/${article.slug}">${article.slug}</a>
+                </div>
+              </div>
+            `;
+                });
+                document.querySelector(".page-list .articles").innerHTML = articles;
             });
+            let nextPage = fetch;
         };
-        fetchList(`https://api.rawg.io/api/games?key=${API_KEY}`, cleanedArgument);
+        fetchList(`https://api.rawg.io/api/games?key=${apiKey}`, cleanedArgument + "&page_size=9");
     };
     const render = ()=>{
         pageContent.innerHTML = `
@@ -552,6 +567,6 @@ const PageList = (argument1 = "")=>{
     render();
 };
 
-},{}]},["apohv","a52r4"], "a52r4", "parcelRequire57b7")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["apohv","a52r4"], "a52r4", "parcelRequire57b7")
 
 //# sourceMappingURL=index.996ecb51.js.map

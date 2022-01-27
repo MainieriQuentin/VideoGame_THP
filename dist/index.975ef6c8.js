@@ -519,22 +519,38 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"8lqZg":[function(require,module,exports) {
-var _indexScss = require("./style/index.scss");
+var _variablesScss = require("./style/variables.scss");
+var _bodyScss = require("./style/body.scss");
+var _headerScss = require("./style/header.scss");
+var _mainScss = require("./style/main.scss");
+var _sectionScss = require("./style/section.scss");
 var _routes = require("./routes");
-const apiKey = "7a3c3d6e418444e7b23642de8d69741d";
+console.log("7a3c3d6e418444e7b23642de8d69741d");
 let pageArgument;
 const setRoute = ()=>{
     const path = window.location.hash.substring(1).split("/");
     pageArgument = path[1] || "";
     const pageContent = document.getElementById("pageContent");
+    console.log(_routes.routes);
     _routes.routes[path[0]](pageArgument);
     return true;
 };
+const searchGame = ()=>{
+    const input = document.getElementById("searchinput");
+    input.addEventListener("keydown", function(event) {
+        if (event.keyCode == 13) {
+            let gameToSearch = input.value;
+            gameToSearch = gameToSearch.replace(/\s+/g, "-");
+            window.location.href = `#pagelist/${gameToSearch}`;
+        }
+    });
+};
+searchGame();
 window.addEventListener("hashchange", ()=>setRoute()
 );
 window.addEventListener("DOMContentLoaded", ()=>setRoute()
 );
 
-},{"./style/index.scss":"hN3b2","./routes":"hw5Qm"}],"hN3b2":[function() {},{}]},["7nZVA","8lqZg"], "8lqZg", "parcelRequire57b7")
+},{"./routes":"hw5Qm","./style/variables.scss":"c3lNi","./style/body.scss":"hE0rG","./style/header.scss":"aS4nQ","./style/main.scss":"knddS","./style/section.scss":"5B6wH"}],"c3lNi":[function() {},{}],"hE0rG":[function() {},{}],"aS4nQ":[function() {},{}],"knddS":[function() {},{}],"5B6wH":[function() {},{}]},["7nZVA","8lqZg"], "8lqZg", "parcelRequire57b7")
 
 //# sourceMappingURL=index.975ef6c8.js.map

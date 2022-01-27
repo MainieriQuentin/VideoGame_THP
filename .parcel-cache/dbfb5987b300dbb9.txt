@@ -1,19 +1,20 @@
-12492
-49/home/quentin/VideoGame_JS/dist/index.996ecb51.js1643111014716698189 0
-49/home/quentin/VideoGame_JS/dist/index.6765d2ea.js1643110661776702770 0
-49/home/quentin/VideoGame_JS/dist/index.397f290a.js1643111285736694672 0
-53/home/quentin/VideoGame_JS/dist/index.397f290a.js.map1643111285736694672 0
-53/home/quentin/VideoGame_JS/dist/index.975ef6c8.js.map1643112479976679172 0
-53/home/quentin/VideoGame_JS/dist/index.996ecb51.js.map1643111014716698189 0
-49/home/quentin/VideoGame_JS/dist/index.0c9a4cb8.js1643110661796702770 0
+12496
+49/home/quentin/VideoGame_JS/dist/index.996ecb51.js1643277030554339752 0
+49/home/quentin/VideoGame_JS/dist/index.6765d2ea.js1643195412592386189 0
+60/home/quentin/VideoGame_JS/dist/VideoGame_JS.59712999.js.map1643112764116675484 0
+49/home/quentin/VideoGame_JS/dist/index.397f290a.js1643195412592386189 0
+53/home/quentin/VideoGame_JS/dist/index.397f290a.js.map1643195412592386189 0
+53/home/quentin/VideoGame_JS/dist/index.975ef6c8.js.map1643276965864340591 0
+53/home/quentin/VideoGame_JS/dist/index.996ecb51.js.map1643277030554339752 0
+49/home/quentin/VideoGame_JS/dist/index.0c9a4cb8.js1643277005364340078 0
 37/home/quentin/VideoGame_JS/.gitignore1643107361936745599 0
-40/home/quentin/VideoGame_JS/src/routes.js1643112479816679174 0
-41/home/quentin/VideoGame_JS/src/index.html1643112220966682533 0
-44/home/quentin/VideoGame_JS/src/PageDetail.js1643111316056694278 0
+40/home/quentin/VideoGame_JS/src/routes.js1643277050464339493 0
+41/home/quentin/VideoGame_JS/src/index.html1643276899434341453 0
+44/home/quentin/VideoGame_JS/src/PageDetail.js1643277005284340080 0
 44/home/quentin/VideoGame_JS/src/assets/images1643105937516764087 1
 43/home/quentin/VideoGame_JS/src/assets/fonts1643105926506764230 1
 37/home/quentin/VideoGame_JS/src/assets1643105937516764087 1
-47/home/quentin/VideoGame_JS/src/style/index.scss1643106415536757882 0
+47/home/quentin/VideoGame_JS/src/style/index.scss1643276869064341848 0
 62/home/quentin/VideoGame_JS/node_modules/resolve-from/readme.md1643105371426771434 0
 61/home/quentin/VideoGame_JS/node_modules/resolve-from/index.js1643105371366771435 0
 75/home/quentin/VideoGame_JS/node_modules/core-js/modules/es.object.create.js1643105375756771378 0
@@ -1332,7 +1333,7 @@
 74/home/quentin/VideoGame_JS/node_modules/core-js/features/weak-map/index.js1643105376326771370 0
 74/home/quentin/VideoGame_JS/node_modules/core-js/es/typed-array/subarray.js1643105376606771367 0
 75/home/quentin/VideoGame_JS/node_modules/core-js/features/weak-map/upsert.js1643105376676771366 0
-42/home/quentin/VideoGame_JS/dist/index.html1643111289896694618 0
+42/home/quentin/VideoGame_JS/dist/index.html1643276965844340591 0
 65/home/quentin/VideoGame_JS/node_modules/core-js/features/weak-map1643105376676771366 1
 79/home/quentin/VideoGame_JS/node_modules/core-js/features/object/iterate-keys.js1643105376386771370 0
 94/home/quentin/VideoGame_JS/node_modules/core-js/features/object/get-own-property-descriptor.js1643105376236771372 0
@@ -1480,7 +1481,7 @@
 69/home/quentin/VideoGame_JS/node_modules/@babel/core/node_modules/.bin1643105380586771315 1
 88/home/quentin/VideoGame_JS/node_modules/lmdb/prebuilds/linux-arm64/node.abi88.glibc.node1643105376306771371 0
 72/home/quentin/VideoGame_JS/node_modules/es-abstract/helpers/modBigInt.js1643105375756771378 0
-54/home/quentin/VideoGame_JS/dist/index.68a4cae3.css.map1643110661786702770 0
+54/home/quentin/VideoGame_JS/dist/index.68a4cae3.css.map1643276965854340591 0
 76/home/quentin/VideoGame_JS/node_modules/es-abstract/helpers/timeConstants.js1643105376056771374 0
 77/home/quentin/VideoGame_JS/node_modules/core-js/actual/promise/all-settled.js1643105373976771401 0
 78/home/quentin/VideoGame_JS/node_modules/@parcel/node-libs-browser/package.json1643105373086771412 0
@@ -2877,6 +2878,7 @@
 75/home/quentin/VideoGame_JS/node_modules/type-fest/source/readonly-deep.d.ts1643105372856771415 0
 74/home/quentin/VideoGame_JS/node_modules/vm-browserify/example/run/entry.js1643105372996771414 0
 65/home/quentin/VideoGame_JS/node_modules/readable-stream/duplex.js1643105373696771404 0
+50/home/quentin/VideoGame_JS/dist/index.4ed70eec.css1643276493114346727 0
 76/home/quentin/VideoGame_JS/node_modules/core-js/modules/es.array.is-array.js1643105375686771379 0
 63/home/quentin/VideoGame_JS/node_modules/core-js/es/object/is.js1643105376376771370 0
 82/home/quentin/VideoGame_JS/node_modules/es-abstract/2016/CreateIterResultObject.js1643105374886771389 0
@@ -4048,6 +4050,7 @@
 79/home/quentin/VideoGame_JS/node_modules/@parcel/runtime-js/src/helpers/.babelrc1643105373816771403 0
 60/home/quentin/VideoGame_JS/node_modules/node-forge/lib/md.js1643105374486771394 0
 75/home/quentin/VideoGame_JS/node_modules/css-tree/lib/generator/sourceMap.js1643105375016771387 0
+54/home/quentin/VideoGame_JS/dist/index.4ed70eec.css.map1643276493114346727 0
 74/home/quentin/VideoGame_JS/node_modules/@swc/helpers/src/_object_spread.js1643105374856771389 0
 62/home/quentin/VideoGame_JS/node_modules/fast-glob/out/index.js1643105373076771413 0
 81/home/quentin/VideoGame_JS/node_modules/core-js/features/async-iterator/reduce.js1643105376526771368 0
@@ -5208,7 +5211,7 @@
 78/home/quentin/VideoGame_JS/node_modules/es-abstract/2015/InstanceofOperator.js1643105375406771382 0
 60/home/quentin/VideoGame_JS/node_modules/json5/dist/index.mjs1643105374156771399 0
 85/home/quentin/VideoGame_JS/node_modules/es-abstract/2017/CreateDataPropertyOrThrow.js1643105374806771390 0
-50/home/quentin/VideoGame_JS/dist/index.68a4cae3.css1643110661786702770 0
+50/home/quentin/VideoGame_JS/dist/index.68a4cae3.css1643276965854340591 0
 79/home/quentin/VideoGame_JS/node_modules/core-js/features/symbol/has-instance.js1643105376256771371 0
 80/home/quentin/VideoGame_JS/node_modules/es-abstract/2017/StringGetOwnProperty.js1643105375996771375 0
 63/home/quentin/VideoGame_JS/node_modules/node-forge/lib/baseN.js1643105372896771415 0
@@ -5890,7 +5893,7 @@
 95/home/quentin/VideoGame_JS/node_modules/split2/node_modules/readable-stream/readable-browser.js1643105374726771391 0
 60/home/quentin/VideoGame_JS/node_modules/@types/express/ts4.01643105373166771411 1
 81/home/quentin/VideoGame_JS/node_modules/caniuse-lite/data/features/input-range.js1643105375686771379 0
-31/home/quentin/VideoGame_JS/dist1643112479976679172 1
+31/home/quentin/VideoGame_JS/dist1643277030554339752 1
 61/home/quentin/VideoGame_JS/node_modules/object-keys/README.md1643105371676771431 0
 83/home/quentin/VideoGame_JS/node_modules/@parcel/transformer-svg/src/dependencies.js1643105373666771405 0
 73/home/quentin/VideoGame_JS/node_modules/@swc/helpers/src/_create_super.js1643105374686771392 0
@@ -5997,6 +6000,7 @@
 76/home/quentin/VideoGame_JS/node_modules/filesize/lib/filesize.es6.min.js.map1643105373346771409 0
 88/home/quentin/VideoGame_JS/node_modules/split2/node_modules/readable-stream/package.json1643105374766771391 0
 93/home/quentin/VideoGame_JS/node_modules/@parcel/runtime-js/lib/helpers/browser/wasm-loader.js1643105374706771391 0
+56/home/quentin/VideoGame_JS/dist/VideoGame_JS.59712999.js1643112764116675484 0
 95/home/quentin/VideoGame_JS/node_modules/@babel/highlight/node_modules/color-name/.eslintrc.json1643105374436771395 0
 89/home/quentin/VideoGame_JS/node_modules/lmdb/prebuilds/darwin-arm64/node.abi93.glibc.node1643105376376771370 0
 85/home/quentin/VideoGame_JS/node_modules/caniuse-lite/data/features/css-placeholder.js1643105375256771384 0
@@ -6276,7 +6280,7 @@
 71/home/quentin/VideoGame_JS/node_modules/es-abstract/2015/DayFromYear.js1643105375036771387 0
 91/home/quentin/VideoGame_JS/node_modules/@parcel/workers/test/integration/workerfarm/ping.js1643105374176771398 0
 75/home/quentin/VideoGame_JS/node_modules/@babel/types/lib/builders/generated1643105373616771406 1
-53/home/quentin/VideoGame_JS/dist/index.6765d2ea.js.map1643110661776702770 0
+53/home/quentin/VideoGame_JS/dist/index.6765d2ea.js.map1643195412592386189 0
 58/home/quentin/VideoGame_JS/node_modules/emphasize/index.js1643105372756771417 0
 84/home/quentin/VideoGame_JS/node_modules/highlight.js/lib/languages/livecodeserver.js1643105375256771384 0
 68/home/quentin/VideoGame_JS/node_modules/node-forge/dist/forge.min.js1643105374116771399 0
@@ -7954,7 +7958,7 @@
 64/home/quentin/VideoGame_JS/node_modules/@swc/helpers/src/_get.js1643105374746771391 0
 81/home/quentin/VideoGame_JS/node_modules/miller-rabin/node_modules/bn.js/README.md1643105374436771395 0
 82/home/quentin/VideoGame_JS/node_modules/postcss-normalize-repeat-style/LICENSE-MIT1643105371676771431 0
-39/home/quentin/VideoGame_JS/src/index.js1643111289816694619 0
+39/home/quentin/VideoGame_JS/src/index.js1643276965704340593 0
 75/home/quentin/VideoGame_JS/node_modules/@babel/types/lib/definitions/jsx.js1643105374746771391 0
 65/home/quentin/VideoGame_JS/node_modules/dotenv-expand/lib/main.js1643105373586771406 0
 53/home/quentin/VideoGame_JS/node_modules/rimraf/bin.js1643105373286771410 0
@@ -8105,7 +8109,7 @@
 118/home/quentin/VideoGame_JS/node_modules/@parcel/core/test/fixtures/plugins/node_modules/parcel-transformer-bad-engines1643105375576771380 1
 87/home/quentin/VideoGame_JS/node_modules/es-abstract/2019/CanonicalNumericIndexString.js1643105374496771394 0
 79/home/quentin/VideoGame_JS/node_modules/es-abstract/2019/IsGenericDescriptor.js1643105375596771380 0
-26/home/quentin/VideoGame_JS1643107739136740703 1
+26/home/quentin/VideoGame_JS1643112954706673010 1
 67/home/quentin/VideoGame_JS/node_modules/domutils/lib/feeds.d.ts.map1643105371296771436 0
 77/home/quentin/VideoGame_JS/node_modules/http-proxy-middleware/dist/index.d.ts1643105373886771402 0
 78/home/quentin/VideoGame_JS/node_modules/caniuse-lite/data/features/css-grid.js1643105375156771386 0
@@ -8969,7 +8973,7 @@
 61/home/quentin/VideoGame_JS/node_modules/colord/plugins/xyz.js1643105371436771434 0
 64/home/quentin/VideoGame_JS/node_modules/colord/plugins/minify.js1643105371306771436 0
 63/home/quentin/VideoGame_JS/node_modules/colord/plugins/mix.d.ts1643105372746771417 0
-49/home/quentin/VideoGame_JS/dist/index.975ef6c8.js1643112479976679172 0
+49/home/quentin/VideoGame_JS/dist/index.975ef6c8.js1643276965854340591 0
 61/home/quentin/VideoGame_JS/node_modules/colord/plugins/lab.js1643105371216771437 0
 61/home/quentin/VideoGame_JS/node_modules/@parcel/fs/index.d.ts1643105374506771394 0
 71/home/quentin/VideoGame_JS/node_modules/caniuse-lite/data/regions/BZ.js1643105374726771391 0
@@ -9079,7 +9083,7 @@
 54/home/quentin/VideoGame_JS/node_modules/is-nan/.github1643105372826771416 1
 92/home/quentin/VideoGame_JS/node_modules/@parcel/utils/test/input/sourcemap/referenced-min.js1643105374926771389 0
 66/home/quentin/VideoGame_JS/node_modules/is-nan/.github/FUNDING.yml1643105372856771415 0
-36/home/quentin/VideoGame_JS/src/style1643110170856709142 1
+36/home/quentin/VideoGame_JS/src/style1643277070574339232 1
 60/home/quentin/VideoGame_JS/node_modules/is-nan/test/index.js1643105372506771420 0
 60/home/quentin/VideoGame_JS/node_modules/is-nan/test/tests.js1643105372636771418 0
 56/home/quentin/VideoGame_JS/node_modules/is-nan/.eslintrc1643105372276771423 0
@@ -9416,7 +9420,7 @@
 87/home/quentin/VideoGame_JS/node_modules/highlight.js/styles/tomorrow-night-eighties.css1643105374326771396 0
 75/home/quentin/VideoGame_JS/node_modules/highlight.js/styles/an-old-hope.css1643105371636771431 0
 60/home/quentin/VideoGame_JS/node_modules/braces/lib/expand.js1643105371506771433 0
-42/home/quentin/VideoGame_JS/src/PageList.js1643112126356683761 0
+42/home/quentin/VideoGame_JS/src/PageList.js1643277030474339753 0
 72/home/quentin/VideoGame_JS/node_modules/highlight.js/styles/sunburst.css1643105374266771397 0
 66/home/quentin/VideoGame_JS/node_modules/pbkdf2/lib/sync-browser.js1643105372336771422 0
 73/home/quentin/VideoGame_JS/node_modules/highlight.js/styles/grayscale.css1643105373336771409 0
@@ -9646,7 +9650,7 @@
 86/home/quentin/VideoGame_JS/node_modules/@parcel/node-resolver-core/test/fixture/nested1643105375206771385 1
 71/home/quentin/VideoGame_JS/node_modules/get-symbol-description/index.js1643105370696771443 0
 82/home/quentin/VideoGame_JS/node_modules/highlight.js/lib/languages/coffeescript.js1643105374896771389 0
-53/home/quentin/VideoGame_JS/dist/index.0c9a4cb8.js.map1643110661806702770 0
+53/home/quentin/VideoGame_JS/dist/index.0c9a4cb8.js.map1643277005374340078 0
 55/home/quentin/VideoGame_JS/node_modules/ws/package.json1643105373716771404 0
 73/home/quentin/VideoGame_JS/node_modules/highlight.js/lib/languages/hsp.js1643105375166771385 0
 54/home/quentin/VideoGame_JS/node_modules/css-select/lib1643105372136771425 1
@@ -11577,7 +11581,7 @@
 88/home/quentin/VideoGame_JS/node_modules/@parcel/core/src/requests/ParcelConfigRequest.js1643105375286771384 0
 64/home/quentin/VideoGame_JS/node_modules/is-callable/CHANGELOG.md1643105370726771443 0
 59/home/quentin/VideoGame_JS/node_modules/rimraf/CHANGELOG.md1643105373386771409 0
-38/home/quentin/VideoGame_JS/src/Home.js1643112332676681084 0
+38/home/quentin/VideoGame_JS/src/Home.js1643276866354341883 0
 53/home/quentin/VideoGame_JS/node_modules/eventemitter31643105371726771430 1
 54/home/quentin/VideoGame_JS/node_modules/util-deprecate1643105371066771439 1
 83/home/quentin/VideoGame_JS/node_modules/@parcel/compressor-raw/src/RawCompressor.js1643105374026771400 0

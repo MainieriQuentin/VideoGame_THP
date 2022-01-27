@@ -1,30 +1,45 @@
+const apiKey = process.env.API_KEY;
+
 const PageList = (argument = "") => {
   const preparePage = () => {
     const cleanedArgument = argument.replace(/\s+/g, "-");
-
-    const displayResults = (articles) => {
-      const resultsContent = results.map(
-        (article) =>
-          `<article class="cardGame">
-          <h1>${article.name}</h1>
-          <h2>${article.released}</h2>
-          <a href="#pagedetail/${article.id}">${article.id}</a>
-        </article>`
-      );
-      const resultsContainer = document.querySelector(".page-list .articles");
-      resultsContainer.innerHTML = resultsContent.join("\n");
-    };
+    let articles = "";
 
     const fetchList = (url, argument) => {
-      const finalURL = argument ? `${url}&search=${argument}` : url;
-      fetch(finalURL)
+      let finalURL = url;
+      if (argument) {
+        finalURL = url + "&search=" + argument;
+      }
+
+      fetch(`${finalURL}`)
         .then((response) => response.json())
-        .then((responseData) => {
-          displayResults(responseData.results);
+        .then((response) => {
+          console.log(response);
+          response.results.forEach((article) => {
+            console.log(article);
+            articles += `
+              <div class="cardGame">
+                <img src="${article.background_image}" alt="game image">
+                <h1>${article.name}</h1>
+                
+                <div class="overview">
+                  <h3>${article.name}</h3>
+                  <h1>${article.rating_top}</h1>
+                  <p>Rating: ${article.metacritic}</p>
+                    <a href = "#pagedetail/${article.slug}">${article.slug}</a>
+                </div>
+              </div>
+            `;
+          });
+          document.querySelector(".page-list .articles").innerHTML = articles;
         });
+      let nextPage = fetch;
     };
 
-    fetchList(`https://api.rawg.io/api/games?key=${API_KEY}`, cleanedArgument);
+    fetchList(
+      `https://api.rawg.io/api/games?key=${apiKey}`,
+      cleanedArgument + "&page_size=9"
+    );
   };
 
   const render = () => {
@@ -39,3 +54,5 @@ const PageList = (argument = "") => {
 
   render();
 };
+
+export { PageList };

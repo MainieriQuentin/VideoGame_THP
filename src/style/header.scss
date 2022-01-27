@@ -1,0 +1,42 @@
+@import "variables.scss";
+
+header {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
+  font-size: 2rem;
+  color: $red;
+  h1 {
+    width: 100%;
+  }
+}
+
+.Pagetitle {
+  font-family: monospace;
+  color: $title-color;
+  font-size: 80px;
+  text-decoration: none !important;
+  font-weight: bold;
+  margin: 60px auto;
+}
+
+#searchinput {
+  border-radius: 50px;
+  height: 2em;
+  width: 90%;
+  font-size: 22px;
+  background-color: #242424;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  color: #fff;
+  margin: 90px auto;
+}
+
+.firstcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -1,9 +1,53 @@
 body {
-  background-color: #242424;
+  background-color: #923206;
   color: #fff;
 }
 
-h1 {
-  color: #a2d1fc;
+#brand {
+  font-family: cursive;
+  color: #fef1eb;
+  font-size: 100px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 60px auto;
+}
+
+#searchinput {
+  border-radius: 50px;
+  height: 2em;
+  width: 90%;
+  font-size: 22px;
+  background-color: #242424;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  color: #fff;
+  margin: 90px auto;
+}
+
+.firstcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 100px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: -20px;
+}
+
+p.text-white {
+  font-size: 26px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#pageContent {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#home-logo {
+  font-size: 2rem;
+  color: #220b00;
 }
 /*# sourceMappingURL=index.68a4cae3.css.map */

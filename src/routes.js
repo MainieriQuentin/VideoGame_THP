@@ -1,6 +1,6 @@
-import { PageDetail } from "./PageDetail";
-import { PageList } from "./PageList";
-import { Home } from "./Home";
+import { PageDetail } from "./PageDetail.js";
+import { PageList } from "./PageList.js";
+import { Home } from "./Home.js";
 
 const routes = {
   "": Home,
